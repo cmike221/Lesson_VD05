@@ -14,8 +14,6 @@ def index():
          "page3": " "
      }
      return render_template('index.html', **context)
-    # return render_template('index.html', **context)
-    # return render_template('shablon_for.html', **context)
 
 
 @app.route('/blog')
@@ -26,7 +24,6 @@ def blog():
         "page2": " active",
         "page3": " "
     }
-    # return render_template('blog.html', **context)
     return render_template('blog.html', **context)
 
 @app.route('/contacts')
@@ -37,7 +34,6 @@ def contacts():
         "page2": " ",
         "page3": " active"
     }
-    # return render_template('contacts.html', **context)
     return render_template('contacts.html', **context)
 
 if __name__ == '__main__':
